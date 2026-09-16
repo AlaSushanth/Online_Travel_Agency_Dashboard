@@ -1,40 +1,39 @@
 # Dashboard Pages — Description
 
-## 1. Order Types
-This page breaks down all orders into three categories: flights, hotels,
-and insurance. It shows the volume and proportion of each order type,
-giving a quick view of where most business activity comes from.
+## 1. Main Page
+This is the landing page of the dashboard, showing key performance
+indicators as summary cards — total flight orders, hotel orders,
+insurance orders, one-way vs. round-trip flight counts, and the number
+of cities covered. It gives an at-a-glance overview before drilling
+into detailed pages.
 
-## 2. Travel Map Analysis
-This page visualizes customer travel preferences on a map, highlighting
-the most popular destinations booked by travelers. It also shows the
-distribution of flight types chosen across different routes, helping
-identify high-demand locations.
+## 2. Travel Map
+This page visualizes bookings geographically using a filled map based
+on country and city. It's paired with summary cards for flight, hotel,
+and insurance orders, letting users see which regions and destinations
+generate the most travel activity.
 
-## 3. Insurance Analysis
-This page shows the distribution of insurance types purchased by
-customers. It highlights the key factors — such as trip cost or
-destination — that influence whether a customer chooses to buy
-insurance.
+## 3. Sales Analysis
+This page tracks order volume patterns — a radar chart showing order
+count by hour of day, an area chart of total orders by month, and a
+pie chart breaking down insurance orders by insurance type. It
+highlights when and how orders are placed.
 
-## 4. Monthly Trends
-This page tracks order volume and revenue across each month of the
-year. It helps identify seasonal booking patterns, such as peak travel
-months and periods of lower demand.
+## 4. Revenue Analysis
+This page focuses on revenue instead of order counts — order amount by
+hour of day, total revenue by month, and a clustered column chart
+comparing customer cost vs. agency cost across insurance types. It
+shows where and when revenue is generated.
 
-## 5. Insurance Cost Overview
-This page summarizes the cost distribution across different insurance
-types offered to travelers. It provides a comparative view of pricing,
-helping to understand which insurance categories are most and least
-expensive.
+## 5. Key Influencers
+This page uses Power BI's Key Influencers visual to identify what
+drives outcomes. One visual analyzes factors behind order amount
+(round-trip flag, hotel region, order type), while the second analyzes
+what drives insurance purchase decisions (city, insurance type,
+customer cost).
 
-## 6. Key Influencers for Insurance
-This page identifies the top factors that most strongly influence a
-customer's decision to purchase insurance. It uses Power BI's Key
-Influencers visual to rank these factors by impact.
-
-## 7. Self-Service Report
-This page offers an interactive, filterable view of the dataset,
-allowing users to explore the data based on their own criteria —
-such as date range, destination, or order type — without needing
-predefined charts.
+## 6. Self-Service
+This page offers an interactive table combining total orders, revenue,
+and insurance costs across date hierarchies (month, day, quarter),
+paired with slicers for order type, insurance type, round-trip flag,
+city, and hour — letting users filter and explore the data freely.
